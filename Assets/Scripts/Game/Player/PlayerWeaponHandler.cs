@@ -54,6 +54,8 @@ public class PlayerWeaponHandler : MonoBehaviour
         return ray.GetPoint(distance);
     }
 
+    // Rotate the turret slowly towards the mouse position using the
+    // RotateTowards method on Quaternions.
     private void Update()
     {
         Vector3 mousePos = GetWorldPositionOnPlane(Input.mousePosition, 0) - transform.position;
